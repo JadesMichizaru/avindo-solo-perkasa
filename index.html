@@ -286,7 +286,7 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-service">
               <div class="portfolio-content h-100">
-                <a href="assets/img/portfolio/jasa (4).jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/jasa (4).jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/portfolio/jasa (4)-revisi.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/jasa (4)-revisi.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="#" title="More Details">Pengendalian Hama Terintegrasi</a></h4>
                   <p>Layanan pengendalian hama dan termite control dengan metode modern untuk menjaga fasilitas Anda tetap bersih dan aman.</p>
@@ -294,12 +294,21 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ser">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-work">
               <div class="portfolio-content h-100">
-                <a href="assets/img/portfolio/work (4).jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/work (4).jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/portfolio/work (4).jpg" data-gallery="portfolio-gallery-work" class="glightbox"><img src="assets/img/portfolio/work (4).jpg" class="img-fluid" alt="Pengerjaan 4"></a>
                 <div class="portfolio-info">
                   <h4><a href="#" title="More Details">Distribusi Material Konstruksi</a></h4>
                   <p>Distribusi chemical beton, obat rayap, serta cat waterproofing yang terjamin kualitas dan keasliannya.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-service">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/work (5).jpg" data-gallery="portfolio-gallery-service" class="glightbox"><img src="assets/img/portfolio/work (5).jpg" class="img-fluid" alt="Layanan Distribusi Material Konstruksi"></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">Distribusi Material Konstruksi</a></h4>
+                  <p>Kami menyediakan dan mendistribusikan material konstruksi terbaik, termasuk chemical beton, obat anti-rayap, dan cat waterproofing berkualitas tinggi. Setiap produk yang kami berikan telah melalui proses seleksi ketat untuk menjamin keaslian, performa, serta mendukung kelancaran dan keamanan proyek Anda.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -521,7 +530,7 @@
           <div class="footer-contact pt-3">
             <p>Jl. Manunggal, Kadipiro</p>
             <p>Kota Surakarta, Jawa Tengah 57111</p>
-            <p class="mt-3"><strong>WA:</strong><a href="https://wa.me/62081225825187?text=Halo, CV. Avindo Solo Perkasa" target="_blank" rel="noopener noreferrer"> +62 0812 2582 5187</a></p>
+            <p class="mt-3"><strong>WA:</strong><a href="https://wa.me/62089525825187?text=Halo, CV. Avindo Solo Perkasa" target="_blank" rel="noopener noreferrer"> +62 0895 2582 5187</a></p>
             <p><strong>Email:</strong> 
               <span>
                 <p></p>
@@ -539,18 +548,18 @@
             <li><i class="bi bi-chevron-right"></i> <a href="#">Tentang Kami</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Layanan Kami</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#contact">Customer Service</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#faq">FAQ</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#clients">Mitra</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Service Kami</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Jasa Kontraktor</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Maintenance</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Jasa Penyediaan Tenaga Kerja</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Jasa Pengendalian Hama Pest</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Distributor Chemical Beton & Material</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Jasa Kontraktor</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Maintenance</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Jasa Penyediaan Tenaga Kerja</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Jasa Pengendalian Hama Pest</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Distributor Chemical Beton & Material</a></li>
           </ul>
         </div>
 
@@ -570,11 +579,16 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">CV. Avindo Solo Perkasa</strong> <span>All Rights Reserved</span></p>
+      <p>© <span id="copyright-year"></span> <span>Copyright</span> <strong class="px-1 sitename">CV. Avindo Solo Perkasa</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         Designed by <a href="https://jades.birohmatika.com/" target="_blank" class="michizaru-store">Michizaru Store</a>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+      });
+    </script>
 
   </footer>
 
